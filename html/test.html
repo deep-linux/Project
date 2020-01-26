@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <title>View Attendance</title>
+
+  </head>
+
+<body>
+<script src="dd.js"></script>
+
+   <h1 style="background-color:rgb(16, 233, 63);">View Attendance</h1> 
+
+<div class="moveR">
+    <button class="login" onclick="location.href='/'">GoBack</button>  
+   </div>
+   
+<form action="/view" method='get'>
+  <select name="Course">
+    <option value="B.Tech" >B.Tech</option>
+    <option value="MBA">MBA</option>
+  </select>
+  <select name="Branch">
+    <option value="CS">CS</option>
+    <option value="CE">CE</option>
+    <option value="EC">EC</option>
+    <option value="EE">EE</option>
+  </select>
+<select name ="Semester"><option value="Semester">Sem</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+</select >
+<select name ="Section"><option value="Section">Sec</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+</select >
+ 
+  
+<input type="date" id="start" name="trip-start"
+       value="2019-07-22"
+       min="2019-01-01" max="2019-12-31">   
+
+<button onclick='func()'>Submit</button>
+</form> 
+
+ <table  id="table" align = "center" border="1px"> 
+  </table>
+
+</body>
+</html>

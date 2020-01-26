@@ -1,0 +1,103 @@
+<html>
+  <head>
+
+    <title>View Attendance</title>
+
+  </head>
+
+<body>
+<script src="dynamic.js"></script>
+
+   <h1 style="background-color:rgb(16, 233, 63);">View Attendance</h1> 
+<style>
+  .button {
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+padding: 7px 80px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.moveR{
+margin-left: 1280px;
+
+}
+  h1 {
+  text-align: center;
+}
+form{
+margin-top:50px;
+margin-left: 80px;
+}
+
+table{
+align = "center"  border="1px">
+}
+</style>
+<div class="moveR">
+    <button class="login" onclick="location.href='/'">GoBack</button>  
+   </div>
+   
+<form method="GET">
+  <select name="Course">
+    <option value="B.Tech" >B.Tech</option>
+    <option value="MBA">MBA</option>
+  </select>
+  <select name="Branch">
+    <option value="CS">CS</option>
+    <option value="CE">CE</option>
+    <option value="EC">EC</option>
+    <option value="EE">EE</option>
+  </select>
+  <select name="Semester">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+</select>
+  <select name="Section">
+    <option value="A">A</option>
+    <option value="B">B</option> 
+    <option value="C">C</option>
+    <option value="D">D</option>
+
+  </select>
+  
+  <br><br>
+  
+
+<input type="date" id="start" name="Date"
+       value="2019-07-22"
+       min="2019-01-01" max="2019-12-31"> </input>   
+<br></br>
+<button onclick='myFunction()'>Submit</button>
+</form>
+<table>
+  <tr>
+
+    <td id="c1"></td>
+    <td id="c2"></td>
+       
+</tr>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+<meta charset="utf-8"/>
+        <title>Login</title>
+            </head>
+  <body>
+      <img  class= "img"src="login.png" height="150" width="150">
+      <style>
+      .container {
+  width: 500px;
+  margin-left: 330;
+  margin-top: 10;}
+
+.container input {
+  width: 100%;
+  
+}
+img{
+    margin-left: 150;
+  margin-top: 200;
+}
+.btn{
+    display: inline-block;
+  padding: 15px 25px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  margin-left: 520;
+}
+.btn:hover {background-color: #3e8e41}
+    </style>
+    <div class="box">
+    <h1 class="container">Login</h1>
+<div class="container">
+      <form name="form" onsubmit="return header()" action="/logged" method="post" >
+    Enter Key Id : <input id="1" type="text" name="id"><br><br> 
+    Enter Key Password : <input id="2" type="password" name="pass"></input></div>
+    <input class ="btn"type="submit" value="Submit">
+</form>
+<script>
+function header(){
+console.log("Hello")
+var x = document.getElementById("1").value;
+var y = document.getElementById("2").value;
+let headers = new Headers({ 'Content-Type': 'application/json', 'Authorization': 'Bearer ' +btoa(x+":"+y) });
+console.log(headers)}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"/>
+ <title>meta tag examples</title>
+</head>
+<body>
+<style>     
+    .center {
+        text-align: center;
+        font-size: 300%;
+        
+      }
+.button {
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+padding: 7px 80px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.login {
+  display: inline-block;
+    font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  
+padding: 11px 16px;
+}
+.moveR{
+margin-left: 1380px;
+
+}
+
+.login:hover {background-color: #3e8e41}
+</style>
+
+<div class="center">
+        <p>Welcome</p>
+      </div>
+<div class="moveR">
+ <button class="login" onclick="location.href='/signout'">SignOut</button>  
+</div>
+<div class="move">
+ <button class="button" onclick="location.href='/add'">Add</button> 
+<button  class="button"  onclick="location.href='/view'"> View</button>
+ <button  class="button"  onclick="location.href='/attendance'">Mark</button> 
+ <button  class="button"  onclick="location.href='/upload'">Upload</button> 
+</div>
+<script>
+console.log(req.body.id)
+</script>
+</body>
+</html> 

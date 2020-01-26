@@ -1,0 +1,385 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191024.080544.19286.0.001.json",
+    "dumpEventTime": "2019-10-24T08:05:44Z",
+    "dumpEventTimeStamp": "1571884545257",
+    "processId": 19286,
+    "cwd": "/home/asus/nodejs/functioningProject",
+    "commandLine": [
+      "/usr/bin/node",
+      "server.js"
+    ],
+    "nodejsVersion": "v12.10.0",
+    "glibcVersionRuntime": "2.29",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.10.0",
+      "v8": "7.6.303.29-node.16",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.0.0-31-generic",
+    "osVersion": "#33-Ubuntu SMP Mon Sep 30 18:51:59 UTC 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 498,
+        "user": 2010500,
+        "nice": 70500,
+        "sys": 475200,
+        "idle": 3407900,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 499,
+        "user": 2024800,
+        "nice": 49100,
+        "sys": 464200,
+        "idle": 3655100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 499,
+        "user": 1901700,
+        "nice": 73400,
+        "sys": 449200,
+        "idle": 3556400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz",
+        "speed": 499,
+        "user": 2140100,
+        "nice": 94000,
+        "sys": 450600,
+        "idle": 3093600,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "74:df:bf:be:3e:81",
+        "address": "192.168.1.6",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "74:df:bf:be:3e:81",
+        "address": "fe80::9560:a354:dbea:e6e5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "asus-X556UF"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000ae3e75",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x00000000009bdd83",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b1948e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b19809",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cca1f5",
+      "symbol": " [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cca866",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cd609a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cd6fa5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000cd9a68",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000ca1597",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000fc9708",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x000000000134e879",
+      "symbol": " [/usr/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1997582336,
+    "totalCommittedMemory": 1996345680,
+    "usedMemory": 1977377560,
+    "availableMemory": 49666360,
+    "memoryLimit": 2042626048,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 31744,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 4161608,
+        "capacity": 2094656,
+        "used": 344920,
+        "available": 1749736
+      },
+      "old_space": {
+        "memorySize": 1990569984,
+        "committedMemory": 1990183208,
+        "capacity": 1975870160,
+        "used": 1975322304,
+        "available": 547856
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 355424,
+        "capacity": 317280,
+        "used": 317280,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 536448,
+        "capacity": 342960,
+        "used": 342960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1028096,
+        "committedMemory": 1028096,
+        "capacity": 1015208,
+        "used": 1015208,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094656,
+        "used": 0,
+        "available": 2094656
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 129.815,
+    "kernelCpuSeconds": 18.698,
+    "cpuConsumptionPercent": 110.01,
+    "maxRss": 2114334720,
+    "pageFaults": {
+      "IORequired": 193,
+      "IONotRequired": 595557
+    },
+    "fsActivity": {
+      "reads": 37128,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 89.736,
+    "kernelCpuSeconds": 10.9551,
+    "cpuConsumptionPercent": 74.586,
+    "fsActivity": {
+      "reads": 34136,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/bin/bash",
+    "SESSION_MANAGER": "local/asus-X556UF:@/tmp/.ICE-unix/13251,unix/asus-X556UF:/tmp/.ICE-unix/13251",
+    "QT_ACCESSIBILITY": "1",
+    "COLORTERM": "truecolor",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "XDG_MENU_PREFIX": "gnome-",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "CONDA_EXE": "/home/asus/anaconda2/bin/conda",
+    "_CE_M": "",
+    "LANGUAGE": "en_IN:en",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "XMODIFIERS": "@im=ibus",
+    "DESKTOP_SESSION": "ubuntu",
+    "SSH_AGENT_PID": "13770",
+    "GTK_MODULES": "gail:atk-bridge",
+    "DBUS_STARTER_BUS_TYPE": "session",
+    "XDG_SEAT": "seat0",
+    "PWD": "/home/asus/nodejs/functioningProject",
+    "LOGNAME": "asus",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XDG_SESSION_TYPE": "x11",
+    "CONDA_PREFIX": "/home/asus/anaconda2",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "WINDOWPATH": "2",
+    "HOME": "/home/asus",
+    "USERNAME": "asus",
+    "IM_CONFIG_PHASE": "1",
+    "LANG": "en_IN",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "VTE_VERSION": "5602",
+    "CONDA_PROMPT_MODIFIER": "(base) ",
+    "GNOME_TERMINAL_SCREEN": "/org/gnome/Terminal/screen/696ac7d2_bb36_4c31_9fc7_c11e40c2ada8",
+    "INVOCATION_ID": "f47d261aa10f47ff8d937f0bdbb3473b",
+    "MANAGERPID": "12659",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "XDG_SESSION_CLASS": "user",
+    "TERM": "xterm-256color",
+    "_CE_CONDA": "",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "USER": "asus",
+    "GNOME_TERMINAL_SERVICE": ":1.92",
+    "CONDA_SHLVL": "1",
+    "DISPLAY": ":1",
+    "SHLVL": "1",
+    "QT_IM_MODULE": "ibus",
+    "XDG_VTNR": "2",
+    "XDG_SESSION_ID": "2",
+    "DBUS_STARTER_ADDRESS": "unix:path=/run/user/1000/bus,guid=f66a97e13a6d41df1c84231f5db10b8f",
+    "CONDA_PYTHON_EXE": "/home/asus/anaconda2/bin/python",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "CONDA_DEFAULT_ENV": "base",
+    "JOURNAL_STREAM": "9:48588",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "PATH": "/home/asus/anaconda2/bin:/home/asus/anaconda2/condabin:/home/asus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "GDMSESSION": "ubuntu",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus,guid=f66a97e13a6d41df1c84231f5db10b8f",
+    "_": "/usr/bin/nodemon"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 524288,
+      "hard": 524288
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 15023,
+      "hard": 15023
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
